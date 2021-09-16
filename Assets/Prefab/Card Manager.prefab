@@ -203,6 +203,7 @@ MonoBehaviour:
   - {fileID: 330416739848063421}
   - {fileID: 330416738950868630}
   back: {fileID: 21300000, guid: 1292140ea16f4f44dbd45f6178b1d020, type: 3}
+  mappingPoint: {fileID: 0}
   pool:
   - {fileID: 330416739908600315}
   - {fileID: 330416739152592520}
@@ -294,8 +295,8 @@ Transform:
   - {fileID: 4239227822659954666}
   - {fileID: 4239227823531630929}
   - {fileID: 4239227824229456351}
-  - {fileID: 4239227822862477596}
   - {fileID: 4239227823558830479}
+  - {fileID: 4239227822862477596}
   m_Father: {fileID: 4288139213815964260}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -625,7 +626,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 96340152844528747, guid: 394568a615a55d847ac985ffd7621917, type: 3}
       propertyPath: m_RootOrder
-      value: 12
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 96340152844528747, guid: 394568a615a55d847ac985ffd7621917, type: 3}
       propertyPath: m_LocalPosition.x
@@ -677,6 +678,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 394568a615a55d847ac985ffd7621917, type: 3}
+--- !u!4 &4239227823558830479 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 96340152844528747, guid: 394568a615a55d847ac985ffd7621917, type: 3}
+  m_PrefabInstance: {fileID: 4288139213008438756}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &330416739300709264 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4546216299152676468, guid: 394568a615a55d847ac985ffd7621917, type: 3}
@@ -688,11 +694,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e799a64caec992f488cf8d4ed25afbe8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!4 &4239227823558830479 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 96340152844528747, guid: 394568a615a55d847ac985ffd7621917, type: 3}
-  m_PrefabInstance: {fileID: 4288139213008438756}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4288139213042175126
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3397,7 +3398,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 96340152844528747, guid: 394568a615a55d847ac985ffd7621917, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 96340152844528747, guid: 394568a615a55d847ac985ffd7621917, type: 3}
       propertyPath: m_LocalPosition.x

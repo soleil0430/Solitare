@@ -8,9 +8,9 @@ using UnityEngine;
 public class Card : MonoBehaviour
 {
     SpriteRenderer spriteRenderer;
-    Collider collider;
 
     public LinkedListNode<Card> thisNode;
+    public AreaBase nowArea;
 
     public ECardShape cardShape;
     public ECardNumber cardNumber;
@@ -31,7 +31,6 @@ public class Card : MonoBehaviour
     private void Awake()
     {
         spriteRenderer = GetComponent<SpriteRenderer>();
-        collider = GetComponent<Collider>();
         thisNode = new LinkedListNode<Card>(this);
     }
 
@@ -39,14 +38,14 @@ public class Card : MonoBehaviour
     {
         return (90f <= a && a <= 270f);
     }
-
+    public bool IsReverse => (IsFlip(rotation.x) || IsFlip(rotation.y));
 
     Vector3 rotation;
     private void Update()
     {
         rotation = transform.rotation.eulerAngles;
 
-        if (IsFlip(rotation.x) || IsFlip(rotation.y))
+        if (IsReverse)
         {
             spriteRenderer.sprite = backSprite;
         }
@@ -54,7 +53,5 @@ public class Card : MonoBehaviour
         {
             spriteRenderer.sprite = frontSprite;
         }
-
-        transform.rotation = Quaternion.Euler(rotation);
     }
 }
